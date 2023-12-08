@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar  {
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(255, 189, 189),rgb(192, 167, 201),rgb(155, 155, 243));
+    border-radius: 15px;
+}
+
+.bg {
+    background-image: url("images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.title {
+    display: flex;
+    margin: 5px 30px;
+    padding: 12px;
+    font-size: 40px;
+}
+.title li {
+    list-style: none;
+    margin: auto;
+    padding: 12px;
+    font-family: 'Roboto Serif', serif;
+    
+}
+.title li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.naviContainer {
+    display: flex;   
+    margin: 0px 30px;
+    padding: 12px;
+    font-size: 30px;
+}
+.naviContainer li {
+    list-style: none;
+    margin: 10px 20px;
+    padding: 12px;
+    cursor: pointer;
+    font-family: 'Roboto Serif', serif;
+    position: relative;
+}
+.naviContainer li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.naviContainer li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(254, 254, 254);
+    transition: all ease 0.3s;
+}
+.naviContainer li a:hover:after {
+    width: 100%;
+}
+
+.naviContainer li a:hover {
+    transition: .2s;
+    color: rgb(255, 255, 255);
+}
+.fa-angle-down{
+    position: absolute;
+    top: 39px;
+}
