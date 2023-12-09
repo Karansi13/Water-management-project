@@ -6,7 +6,6 @@
     <title>Water Management</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   </head>
   <body>
@@ -15,13 +14,13 @@
         <div class="bg">       
         <div class="navbar">
           <div class="title">
-            <li><a href="#">Water</a></li>
+            <li><a href="#">Aqua Care</a></li>
           </div>
           <div class="naviContainer">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">Contact</a></i></li>
+            <li><a href="#Home" onclick="scrollToSection('Home')">Home</a></li>
+            <li><a href="#About" onclick="scrollToSection('About')">About</a></li>
+            <li><a href="#Services" onclick="scrollToSection('Services')">Services</a></li>
+            <li><a href="#Contact" onclick="scrollToSection('Contact')">Contact</a></i></li>
           </div>
         </div> 
     </div>
@@ -29,13 +28,21 @@
     </header>
  
     <main>
+
+      <!-- LOCATION -->
       <section class="location-page">
-        <div class="location-box">
+        <div class="location-img">
         </div>
 
-        <div class="location-content">
+        <div class="location-box">
+          <div class="location-title">
+            <h1>LOCATION</h1>
+          </div>
+          <div class="location-content"><p>Bhilai, Chhattisgarh</p></div>
         </div>
       </section>
+
+      <!-- Partition line -->
 
       <div class="line">
         <div class="line1"></div>
@@ -43,7 +50,7 @@
 
       <!-- About -->
 
-      <section class="about-page">
+      <section class="about-page" id="About">
         <div class="about-box">
           <div class="about-title">
             <h1>Say GoodBye to Water</h1>
@@ -60,20 +67,30 @@
           </div>
       </section>
 
+      <!-- Partition line -->
+
+      <div class="line">
+        <div class="line1"></div>
+      </div>
+
       <!-- Box pages  -->
-      <section class="cards-page">
+      <section class="cards-page" id="Services">
 
         <div class="cards-title">
           <h1>Services We Provide</h1>
         </div>
 
-        <!-- Card 1 -->
+        <div class="card-box">
+          <!-- Card 1 -->
         <div class="card1-box">
           <div class="card1-title">
             <h2>Water Management</h2>
           </div>
           <div class="card1-content">
             <p>Our team of experts will help you manage and maintain your water networking system to ensure that you always have access to clean and safe water.</p>
+          </div>
+          <div class="card1-button">
+            READ MORE
           </div>
         </div>
 
@@ -85,6 +102,9 @@
           <div class="card2-content">
             <p>We provide regular maintenance checks to ensure that your water networking system is always running smoothly and efficiently. Our team is available 24/7 to help you with any issues that may arise.</p>
           </div>
+          <div class="card2-button">
+            READ MORE
+          </div>
         </div>
 
         <!-- Card 3 -->
@@ -94,6 +114,9 @@
           </div>
           <div class="card1-content">
             <p>Our online reporting system makes  it easy for you to report any water supply issue in your area. Simply login, provide the details, and our team will take care of the rest. Say goodbye to long waiting times on your phone.</p>
+          </div>
+          <div class="card1-button">
+            READ MORE
           </div>
         </div>
 
@@ -105,6 +128,9 @@
           <div class="card2-content">
             <p>Our experts provides consultation services to help you identify the best water supply solution for your needs. From identifying the right water filtration system to choose the best water storage solutions, we’ve got you covered.</p>
           </div>
+          <div class="card2-button">
+            READ MORE
+          </div>
         </div>
 
         <!-- Card 5 -->
@@ -114,6 +140,9 @@
           </div>
           <div class="card1-content">
             <p>We provide water quality testing service to ensure you that your water is safe and free from contaminants. Our team uses safe-of-the-art equipment to provide accurate and reliable results.</p>
+          </div>
+          <div class="card1-button">
+            READ MORE
           </div>
         </div>
 
@@ -125,11 +154,21 @@
           <div class="card2-content">
             <p>We have a dedicated emergency response team that is available 24/7 to help you with any urgent water supply issues. Whether its a burst pipe or a water outage, we’ll be there to assist you as quickly as possible.</p>
           </div>
+          <div class="card2-button">
+            READ MORE
+          </div>
+        </div>
         </div>
       </section>
 
+      <!-- Partition line -->
+
+      <div class="line">
+        <div class="line1"></div>
+      </div>
+
       <!-- Conatact page -->
-      <section class="contact-page">
+      <section class="contact-page" id="Contact">
         <div class="contact-box">
           <div class="content-title">Contact US</div>
           <div class="contact-content">
@@ -173,7 +212,40 @@
     </main>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- Footer section -->
+
+    <footer class="footer">
+      <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()"><article aria-label="Back to top">&#8592;BACK TO TOP</article></button>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>FOLLOW US</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+       <div class="footer-col">
+            <h4>CONTACT</h4>
+            <ul>
+              <li>XYZ Buisness Center</li>
+           <li>13 Fifth Avenue, Bhilai, CG</li>
+           <li>+987-654-3210</li>
+           <li>water@gmail.com</li>
+            </ul>
+          </div>
+       </div>
+       <p class="copyright-2023-mukesh-all-rights-reserved-gWR">Copyright 2023 Mukesh | All Rights Reserved</p>
+       </div>
+          
+          
+        </div>
+      </div>
+   </footer>
+
+
+   <script src="script.js"></script>
   </body>
 </html>
