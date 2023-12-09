@@ -312,3 +312,32 @@ textarea{
     margin: 10px 0;
     font-weight: 400;
 }
+
+.cards-page{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/cards_bg.jpg);
+    background-position: center;
+    block-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* grid-row-gap: 5vh;
+    grid-column-gap: 5vw;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 40vh 40vh; */
+}
+
+.card1-box{
+    height: 40vh;
+    width: 25%;
+    background-color: #2A73B6;
+    margin: 80px 80px;
+}
+.card2-box{
+    height: 40vh;
+    width: 25%;
+    background-color: #1D91FC;
+    margin: 80px 80px;
+}
