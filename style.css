@@ -6,14 +6,14 @@
     box-sizing: border-box;
 }
 
-body::-webkit-scrollbar  {
+/* body::-webkit-scrollbar  {
     background-color: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
     background: linear-gradient(rgb(255, 189, 189),rgb(192, 167, 201),rgb(155, 155, 243));
     border-radius: 15px;
-}
+} */
 
 html{
     scroll-behavior: smooth;
@@ -52,12 +52,13 @@ html{
   }
 
 .bg {
-    background-image: url("images/bg.jpg");
+    background-image: url("images/Homebg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 .navbar {
@@ -116,7 +117,7 @@ html{
     bottom: 0;
     height: 3px;
     width: 0%;
-    background-color: rgb(254, 254, 254);
+    background-color: rgb(0, 0, 0);
     transition: all ease 0.3s;
 }
 
@@ -126,12 +127,30 @@ html{
 
 .naviContainer li a:hover {
     transition: .2s;
-    color: rgb(255, 255, 255);
 }
 
-.fa-angle-down{
+
+.getStarted{
+    height: 7vh;
+    width: 10vw;
     position: absolute;
-    top: 39px;
+    background-color: #f8f8f9;
+    color: white;
+    cursor: pointer;
+    top: 80vh;
+    left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    color: #000;
+    font-family: sans-serif;
+    
+}
+.getStarted:hover{
+    text-decoration: underline;
 }
 
 
@@ -210,7 +229,7 @@ html{
 }
 
 .button{
-    background-color: white;
+    background-color: #72A1BC;
     width: 20%;
     display: flex;
     height: 7%;
@@ -219,6 +238,8 @@ html{
     align-items: center;;
     border-radius: 0%;
     cursor: pointer;
+    border-radius: 10px;
+    text-decoration: underline;
 }
 
 .img-box{
@@ -361,21 +382,43 @@ textarea{
     margin: 10px 0;
     font-weight: 400;
 }
+.Services-content{
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+.checkbox{
+    cursor: pointer;
+    gap: 10px;
+}
+.c{
+    cursor: pointer;
+    margin-left: 10px;
+}
+.submit{
+    height: 4vh;
+    width: 7vw;
+    cursor: pointer;
+    position: absolute;
+    background-color: #f8f8f9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #000;
+    margin-top: 40px;
+    margin-left: 60px;
+}
 
 .cards-page{
     height: 105vh;
     width: 100%;
     background-color: #598EB6;
     padding-bottom: 5vh;
-    /* background-image: url(images/cards_bg.jpg);
-    background-position: center;
-    block-size: cover;
-    background-repeat: no-repeat; */
-    
-    /* grid-row-gap: 5vh;
-    grid-column-gap: 5vw;
-    grid-template-columns: 25% 25% 25%;
-    grid-template-rows: 40vh 40vh; */
 }
 
 .cards-title{
@@ -391,53 +434,64 @@ textarea{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .card1-title{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
 }
 
 .card2-title{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
 }
 
 .card1-content{
-    margin-top: 2vh;
+    margin-top: 4vh;
+    font-size: 1rem;
 }
 
 .card2-content{
-    margin-top: 2vh;
+    margin-top: 4vh;
+    
+    font-size: 1rem;
 }
 
 .card1-button{
     background-color: white;
-    width: 30%;
-    height: 10%;
+    width: 35%;
+    height: 4vh;
     font-size: 0.9rem;
-    border-radius: 0%;
     cursor: pointer;
     margin-top: 5vh;
     padding: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    text-decoration: underline;
+    font-family: sans-serif;
 }
 
 .card2-button{
     background-color: #72A1BC;
-    width: 30%;
-    height: 10%;
+    width: 35%;
+    height: 4vh;
     font-size: 0.9rem;
-    border-radius: 0%;
     cursor: pointer;
     margin-top: 5vh;
     padding: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    text-decoration: underline;
+    font-family: sans-serif;
 }
 .card1-box{
     height: 40vh;
@@ -534,4 +588,9 @@ ul{
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #5793e7;
+}
+
+.copyright{
+    text-align: center;
+    background-color: #72A1BC;
 }
